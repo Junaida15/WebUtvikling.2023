@@ -1,0 +1,398 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Variables */
+:root {
+  --main-color: rgb(255, 213, 0);
+  --text-color: #0e0e0e;
+  --bg-color: #f8f8f8;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+
+*::selection {
+  /* Customizes the color and background of text selection */
+  background: var(--main-color);
+  color: var(--text-color);
+}
+body {
+  /* Sets the default text and background color */
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+header {
+  /* Positions the header and sets its size and background */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Flex layout for header contents */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 170px;
+  background: var(--bg-color);
+}
+
+.logo {
+  color: var(--main-color);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.navbar {
+  /* Displays navigation items in a row */
+  display: flex;
+}
+.navbar a {
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: var(--main-color);
+  transition: 0.4s;
+}
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+section {
+  padding: 70px 17%;
+}
+.home {
+  /* Sets up the grid layout and background for the home section */
+  width: 100%;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  background-size: cover;
+  background-image: url("https://www.oslomet.no/var/oslomet/storage/images/4/5/8/2/42854-2-nor-NO/kjeller.jpg");
+}
+
+.home-text h1 {
+  font-size: var(--big-font);
+  color: var(--main-color);
+  padding-right: 50px;
+  text-shadow: 5px 5px 6px rgb(0, 0, 0);
+}
+.home-text h2 {
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  transform: scale(1.2) translateY(10px);
+}
+
+.standard {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1.5rem;
+  align-items: center;
+  background-color: var(--main-color);
+  border-top: 4px solid #000000;
+}
+.standard-img img {
+  max-width: 100%;
+  width: 480px;
+  height: auto;
+}
+.standard-text span {
+  color: red;
+  font-weight: 600;
+}
+.standard-text h2 {
+  font-size: var(--h2-font);
+}
+.standard-text p {
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7;
+}
+
+.heading {
+  text-align: center;
+}
+.heading span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.heading h2 {
+  font-size: var(--h2-font);
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  margin-top: 4rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fcf3b1;
+  padding: 20px;
+  padding-top: 35px;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.menu-container .box:hover {
+  transform: scale(1.05) translateY(10px);
+}
+.box-img {
+  width: 250px;
+  height: 325px;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+}
+.box h2 {
+  font-size: 1.3rem;
+  color: #000000;
+  padding-top: 5px;
+}
+.box h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 4px 0 10px;
+  color: rgb(180, 157, 4);
+}
+
+.box .bx {
+  position: absolute;
+  background: var(--main-color);
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  padding: 7px 10px;
+  border-radius: 0 0.5rem 0 0.5rem;
+  cursor: pointer;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.s-box {
+  text-align: center;
+  padding: 20px 30px;
+}
+.s-box img {
+  width: 90px;
+}
+.s-box h3 {
+  margin: 4px 0 10px;
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+.s-box p {
+  line-height: 1.7;
+}
+
+.cta {
+  background: #ffc506;
+  padding: 70px 0;
+  text-align: center;
+  width: 66%;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.cta h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  padding: 10px 0;
+  border-top: 2px solid #222;
+}
+.col {
+  width: 25%;
+  padding-left: 20px;
+}
+.col h4 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  position: relative;
+}
+.col h4::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: -8px;
+  background: var(--main-color);
+}
+.col ul li:not(last-child) {
+  margin-bottom: 15px;
+}
+.col ul li a {
+  color: #9897a9;
+  font-size: 1.1rem;
+  display: block;
+  text-transform: capitalize;
+  transition: all 0.4s ease;
+}
+.col ul li a:hover {
+  color: var(--text-color);
+  transform: translateX(-10px);
+}
+.col .social-icons {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col .social-icons a {
+  height: 40px;
+  width: 40px;
+  background: var(--main-color);
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.col .social-icons a:hover {
+  transform: scale(1.2);
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+
+/* Responsive Design: Media Queries */
+
+/* Styles for screens up to 1560px wide (Large Devices, Small Laptops) */
+@media (max-width: 1560px) {
+  header {
+    padding: 14px 40px;
+    transition: 0.2s;
+  }
+  :root {
+    --big-font: 3.5rem;
+    --h2-font: 2rem;
+  }
+  .cta {
+    width: 90%;
+  }
+}
+
+/* Styles for screens up to 1140px wide (Tablets, Large Phones) */
+@media (max-width: 1140px) {
+  section {
+    padding: 50px 8%;
+  }
+
+  #menu-icon {
+    display: initial;
+    color: var(--text-color);
+  }
+
+  .navbar {
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top: 1px solid black;
+    background: var(--bg-color);
+    transition: all 0.4s ease;
+  }
+  .navbar.active {
+    top: 70px;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+  }
+  .col {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for screens up to 875px wide (Medium to Large Phones) */
+@media (max-width: 875px) {
+  :root {
+    --big-font: 3rem;
+    --h2-font: 1.8rem;
+  }
+}
+
+/* Styles for screens up to 720px wide (Small to Medium Phones) */
+@media (max-width: 720px) {
+  header {
+    padding: 10px 16px;
+  }
+  .home {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .home-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .home-text h1,
+  h2 {
+    padding-right: 0px;
+  }
+  .standard {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .standard-img {
+    order: 2;
+  }
+  section {
+    padding: 100px 7%;
+  }
+}
+
+/* Styles for screens up to 575px wide (Very Small Phones) */
+@media (max-width: 575px) {
+  .col {
+    width: 100%;
+  }
+}

@@ -82,7 +82,6 @@ section {
   background-size: cover;
   background-image: url("https://www.oslomet.no/var/oslomet/storage/images/4/5/8/2/42854-2-nor-NO/kjeller.jpg");
 }
-
 .home-text h1 {
   font-size: var(--big-font);
   color: var(--main-color);
@@ -114,15 +113,32 @@ section {
   background-color: var(--main-color);
   border-top: 4px solid #000000;
 }
+.standard-1 {
+  grid-template-columns: none;
+}
+.standard-red {
+  background-color: red;
+}
+.standard-purple {
+  background-color: purple;
+}
 .standard-img img {
   max-width: 100%;
   width: 480px;
   height: auto;
 }
+.standard-img1 {
+  height: 250px;
+}
 .standard-text span {
   color: red;
   font-weight: 600;
 }
+
+.standard-text1 {
+  text-align: center;
+}
+
 .standard-text h2 {
   font-size: var(--h2-font);
 }

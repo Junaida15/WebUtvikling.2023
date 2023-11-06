@@ -1,171 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="website icon" type="png" href="img/Oslomet.jpg">
-    <title>Oslomet</title>
-    <!--Custom css link--->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    
-    <!---Box icons link-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicon for the website -->
+  <link rel="website icon" type="png" href="img/Oslomet.jpg">
+  <title>Oslomet</title>
+  <!-- Link to the external CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
+  <!-- Link to Boxicons library for icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 
-    <!---Google fonts link--->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!---Header Section With Navigation-->
-    <header>
-      <a href="#" class="logo">OsloMet</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
+  <!-- Preconnect to Google Fonts for performance improvement -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Link to the Google Fonts for the Poppins font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header with navigation links -->
+  <header>
+    <a href="#" class="logo">OsloMet</a>
+    <!-- Menu icon for responsive navigation -->
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="ourCanteen.html">Our Canteen</a></li>
-        <li><a href="topical.html">Topical</a></li>
-      </ul>
-    </header>
+    <!-- Navigation bar with links to different pages -->
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="ourCanteen.html">Our Canteen</a></li>
+      <li><a href="topical.html">Topical</a></li>
+    </ul>
+  </header>
 
-    <!---Home Section-->
-    <section
-      class="home"
-      style="background-image: url('img/Acc.jpg')"
-      id="home"
-    >
-      <div class="home-text">
-        <h1>Accessibility</h1>
-      </div>
-    </section>
-
-    <!---Accessibility start-->
-    <section class="standard" id="standard" style="grid-template-columns: none;">
-      <div class="standard-text" style="text-align: center;">
-
-        <!-- Accessibility test results and insights -->
-        <span>Testing</span>
-        <h2>
-          This is our tests of <br />
-          accessibility
-        </h2>
-        <p style="text-align: center;">
-          Embarking on the journey of refining our website, we began by scrutinizing the CSS file.
-           We immediately identified an anomaly: the font-weight was erroneously set to 1.1rem — a unit typically used for font sizes, not weight.
-            Correcting this, we swiftly altered the font-weight to bold, enhancing the text's visual impact.<br><br>
-          Our attention then shifted to the primary HTML file, index.html. A crucial oversight was soon apparent: the absence of a language declaration. 
-          To rectify this, we promptly included lang="en" within the opening <html> tag, thereby specifying English as the page's primary language. This not only aids in accessibility but also improves search engine optimization.<br><br>
-          While perusing the HTML code, we noted redundant hyphens ("-") within our comments. These extraneous characters were triggering warnings.
-           We meticulously expunged these superfluous dashes, thus streamlining the code and eliminating the associated warnings.<br><br>
-          Next, we turned to a common yet vital aspect of web accessibility: image descriptions. Realizing we had missed adding alt attributes to our images, we quickly rectified this by adding alt="Not available" to each.
-           This inclusion ensures that even when images aren't displayed or accessible to visually impaired users, there's still a textual description available.<br><br>
-          Upon rectifying the issues in the index.html file, it was disappointing yet unsurprising to find similar errors and warnings scattered across other HTML files.
-           Determined, we embarked on the repetitive task of making identical corrections in each file. Consistency and attention to detail in these modifications were crucial to maintain the integrity and accessibility of the entire site.<br><br>
-          Two specific files, seemingly pertaining to topical content and our canteen, presented a unique challenge. Both contained duplicated id attributes, a critical error in HTML where each id must be unique to ensure proper page navigation and styling.
-           We tackled this issue by assigning distinct, descriptive id values in each file, thus resolving the conflict.<br><br>
-           Emphasizing universal design, we've implemented high-contrast color schemes with a striking combination of yellow backgrounds and black text throughout our site. This choice not only creates a visually appealing aesthetic but significantly aids in readability and user focus.
-            Coupled with the use of bold headings, our design strategy effectively encompasses key principles of universal design, ensuring that our content is easily accessible and comprehensible to a wider audience.<br><br>
-          Lastly, our testing tools bombarded us with numerous informational messages. One such advice was about including a trailing slash (/) at the end of self-closing tags like meta and link.
-           These messages, while informative, pointed out stylistic preferences rather than actual errors. We decided to maintain our current style, preferring the cleanliness of omitting the optional slash. This decision, while minor, reflects our commitment to a codebase that is not only functional and compliant but also adheres to our team's stylistic preferences.<br><br>
-          In conclusion, this meticulous process of debugging and optimizing the website was a testament to our commitment to precision, accessibility, and adherence to web standards.
-           Each step, though seemingly minor in isolation, collectively contributed to a more robust, user-friendly, and accessible website. <br><br>
-           We used validator.w3.org to test our code files. 
-      </p>
-      
-      
-        <a href="https://validator.w3.org/?fbclid=IwAR2EUSP-l2mxujG8ItIpB906ocov40jVNU7W4JY0uZnmpvsCW5LlTI6BVg0" target="_blank" class="btn"> Go to Validator.w3</a>
-      </div>
-    </section>
-
-    <!---Our Errors and Warnings-->
-    <div class="standard-text" style="text-align: center; background-color: #000000";>
-      <span >Errors and Warnings</span>
-      </div>
-
-      <!-- Images showing our Error and Warnings -->
-    <section class="standard" id="standard" >
-      <div class="standard-img">
-        <img src="img/Test2.png" />
-      </div>
-      <div class="standard-img">
-        <img src="img/Test3.png" />
-      </div>
-      <div class="standard-img" style="align-items: center;">
-        <img src="img/Test5.png" />
-      </div>
-      <div class="standard-img" style="align-items: center;">
-        <img src="img/Test6.png" />
-      </div>
-    </section>
-
-    <!---Our Info Messages-->
-    <div class="standard-text" style="text-align: center; background-color: #000000";>
-      <span>Info Messages</span>
+  <!-- Home section with background image -->
+  <section class="home" style="background-image: url('img/Acc.jpg')">
+    <div class="home-text">
+      <h1>Accessibility</h1>
     </div>
+  </section>
 
-    <!-- Images showing our results -->
-    <section class="standard" id="standard" >
-      <div class="standard-img">
-        <img src="img/Test1.png" />
-      </div>
-      <div class="standard-img">
-        <img src="img/Test4.png" />
-      </div>
-    </section>
+  <!-- Accessibility standards and test results section -->
+  <section class="standard standard-1">
+    <div class="standard-text standard-text1">
+      <!-- Content describing accessibility testing and results -->
+      <span>Testing</span>
+      <h2>
+        This is our tests of <br />
+        accessibility
+      </h2>
+      <p>
+        Embarking on the journey of refining our website, we began by scrutinizing the CSS file.
+        We immediately identified an anomaly: the font-weight was erroneously set to 1.1rem — a unit typically used for font sizes, not weight.
+        Correcting this, we swiftly altered the font-weight to bold, enhancing the text's visual impact.<br><br>
+        Our attention then shifted to the primary HTML file, index.html. A crucial oversight was soon apparent: the absence of a language declaration. 
+        To rectify this, we promptly included lang="en" within the opening <html> tag, thereby specifying English as the page's primary language. This not only aids in accessibility but also improves search engine optimization.<br><br>
+        While perusing the HTML code, we noted redundant hyphens ("-") within our comments. These extraneous characters were triggering warnings.
+        We meticulously expunged these superfluous dashes, thus streamlining the code and eliminating the associated warnings.<br><br>
+        Next, we turned to a common yet vital aspect of web accessibility: image descriptions. Realizing we had missed adding alt attributes to our images, we quickly rectified this by adding alt="Not available" to each.
+        This inclusion ensures that even when images aren't displayed or accessible to visually impaired users, there's still a textual description available.<br><br>
+        Upon rectifying the issues in the index.html file, it was disappointing yet unsurprising to find similar errors and warnings scattered across other HTML files.
+        Determined, we embarked on the repetitive task of making identical corrections in each file. Consistency and attention to detail in these modifications were crucial to maintain the integrity and accessibility of the entire site.<br><br>
+        Two specific files, seemingly pertaining to topical content and our canteen, presented a unique challenge. Both contained duplicated id attributes, a critical error in HTML where each id must be unique to ensure proper page navigation and styling.
+        We tackled this issue by assigning distinct, descriptive id values in each file, thus resolving the conflict.<br><br>
+        Emphasizing universal design, we've implemented high-contrast color schemes with a striking combination of yellow backgrounds and black text throughout our site. This choice not only creates a visually appealing aesthetic but significantly aids in readability and user focus.
+        Coupled with the use of bold headings, our design strategy effectively encompasses key principles of universal design, ensuring that our content is easily accessible and comprehensible to a wider audience.<br><br>
+        Lastly, our testing tools bombarded us with numerous informational messages. One such advice was about including a trailing slash (/) at the end of self-closing tags like meta and link.
+        These messages, while informative, pointed out stylistic preferences rather than actual errors. We decided to maintain our current style, preferring the cleanliness of omitting the optional slash. This decision, while minor, reflects our commitment to a codebase that is not only functional and compliant but also adheres to our team's stylistic preferences.<br><br>
+        In conclusion, this meticulous process of debugging and optimizing the website was a testament to our commitment to precision, accessibility, and adherence to web standards.
+        Each step, though seemingly minor in isolation, collectively contributed to a more robust, user-friendly, and accessible website. <br><br>
+        We used validator.w3.org to test our code files. 
+      </p>
+      <!-- Link to the W3C validator service -->
+      <a href="https://validator.w3.org/?fbclid=IwAR2EUSP-l2mxujG8ItIpB906ocov40jVNU7W4JY0uZnmpvsCW5LlTI6BVg0" target="_blank" class="btn"> Go to Validator.w3</a>
+    </div>
+  </section>
 
-    <!---Footer With Contact Info and Links-->
-    <section id="contact">
-      <div class="footer">
-        <div class="main">
-          <div class="col">
-            <h4>Menu Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="accessibility.html">Accessibility</a></li>
-              <li><a href="ourCanteen.html">OurCanteen</a></li>
-              <li><a href="topical.html">Topical</a></li>
-            </ul>
+  <!-- Section for displaying errors and warnings from validation -->
+  <div class="standard-text standard-text1">
+    <span>Errors and Warnings</span>
+  </div>
+
+  <!-- Section with images showing errors and warnings from testing -->
+  <section class="standard">
+    <div class="standard-img">
+      <img src="img/Test2.png" alt="Error screenshot" />
+    </div>
+    <div class="standard-img">
+      <img src="img/Test3.png" alt="Warning screenshot" />
+    </div>
+    <div class="standard-img" style="align-items: center;">
+      <img src="img/Test5.png" alt="Error screenshot" />
+    </div>
+    <div class="standard-img" style="align-items: center;">
+      <img src="img/Test6.png" alt="Warning screenshot" />
+    </div>
+  </section>
+
+  <!-- Section for information messages from validation -->
+  <div class="standard-text standard-text1">
+    <span>Info Messages</span>
+  </div>
+
+  <!-- Section with images showing information messages from testing -->
+  <section class="standard">
+    <div class="standard-img">
+      <img src="img/Test1.png" alt="Information message screenshot" />
+    </div>
+    <div class="standard-img">
+      <img src="img/Test4.png" alt="Information message screenshot" />
+    </div>
+  </section>
+
+  <!-- Footer with contact information and additional links -->
+  <section>
+    <div class="footer">
+      <div class="main">
+        <div class="col">
+          <h4>Menu Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="ourCanteen.html">OurCanteen</a></li>
+            <li><a href="topical.html">Topical</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">Postboks 4, St. Olavs plass</a></li>
+            <li><a href="#">0130 Oslo</a></li>
+            <li><a href="#">Tlf: 67 23 50 00</a></li>
+            <li><a href="#">Oslomet@email.com</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Sources</h4>
+          <ul>
+            <li><a href="sources.html">Sources</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Social Media</h4>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
           </div>
-
-          <div class="col">
-            <h4>Contact Us</h4>
-            <ul>
-              <li><a href="#">Postboks 4, St. Olavs plass</a></li>
-              <li><a href="#">0130 Oslo</a></li>
-              <li><a href="#">Tlf: 67 23 50 00</a></li>
-              <li><a href="#">Oslomet@email.com</a></li>
-            </ul>
-          </div>
-
-          <div class="col">
-            <h4>Sources</h4>
-            <ul>
-              <li><a href="sources.html">Soruces</a></li>
-            </ul>
-          </div>
-
-          <div class="col">
-            <h4>Social Media</h4>
-            <div class="social-icons">
-              <a href="#"><i class="bx bxl-facebook"></i></a>
-              <a href="#"><i class="bx bxl-twitter"></i></a>
-              <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-              <a href="#"><i class="bx bxl-youtube"></i></a>
-            </div>
-          </div>
+          
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!---Custom js file link-->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Link to custom JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
 </html>

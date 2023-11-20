@@ -11,7 +11,11 @@
 
 /* Custom Variables */
 :root {
-  --main-color: rgb(255, 213, 0); /* Sets a custom yellow color as the main theme color */
+  --main-color: rgb(
+    255,
+    213,
+    0
+  ); /* Sets a custom yellow color as the main theme color */
   --text-color: #0e0e0e; /* Sets a dark color for text */
   --bg-color: #f8f8f8; /* Sets a light grey color for backgrounds */
   --big-font: 5rem; /* Sets a large font size for big text */
@@ -39,7 +43,7 @@ header {
   display: flex; /* Uses flexbox for layout */
   align-items: center; /* Centers items vertically */
   justify-content: space-between; /* Distributes space between header items */
-  padding: 25px 170px; /* Adds padding inside the header */
+  padding: 1.5625rem 10.625rem; /* Adds padding inside the header */
   background: var(--bg-color); /* Sets the background color of the header */
 }
 
@@ -57,7 +61,7 @@ header {
   /* Styling for navigation links */
   color: var(--text-color); /* Sets the text color for navigation links */
   font-weight: bold; /* Makes the navigation links bold */
-  padding: 10px 20px; /* Adds padding around the navigation links */
+  padding: 0.625rem 1.25rem; /* Adds padding around the navigation links */
   font-weight: 500; /* Sets the font weight for navigation links */
 }
 .navbar a:hover {
@@ -73,7 +77,7 @@ header {
 }
 section {
   /* General styling for sections */
-  padding: 70px 17%; /* Adds padding inside sections */
+  padding: 4.375rem 17%; /* Adds padding inside sections */
 }
 
 .home {
@@ -81,42 +85,52 @@ section {
   width: 100%; /* Full width of the parent container */
   min-height: 90vh; /* Minimum height is 90% of the viewport height */
   display: grid; /* Uses CSS grid layout */
-  grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Creates two columns of equal width */
   gap: 1.5rem; /* Sets the gap between grid items */
   align-items: center; /* Vertically aligns grid items in the center */
   background-size: cover; /* Ensures background image covers the entire section */
   background-image: url("https://www.oslomet.no/var/oslomet/storage/images/4/5/8/2/42854-2-nor-NO/kjeller.jpg"); /* Sets a background image from the provided URL */
 }
 .home-text h1 {
-  font-size: var(--big-font); /* Uses the large font size defined in custom properties */
+  font-size: var(
+    --big-font
+  ); /* Uses the large font size defined in custom properties */
   color: var(--main-color); /* Sets text color using custom property */
-  padding-right: 50px; /* Adds padding to the right */
-  text-shadow: 5px 5px 6px rgb(0, 0, 0); /* Applies a shadow effect to the text */
+  padding-right: 3.125rem; /* Adds padding to the right */
+  text-shadow: 0.3125rem 0.3125rem 0.375rem rgb(0, 0, 0); /* Applies a shadow effect to the text */
 }
 .home-text h2 {
   font-size: var(--h2-font); /* Uses h2 font size from custom properties */
   margin: 1rem 0 2rem; /* Sets top and bottom margins */
-  text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Light shadow effect for contrast */
+  text-shadow: 0.125rem 0.125rem 0.25rem rgb(255, 255, 255); /* Light shadow effect for contrast */
 }
 .btn {
   display: inline-block; /* Makes the element an inline block */
-  padding: 10px 20px; /* Adds padding inside the button */
+  padding: 0.625rem 1.25rem; /* Adds padding inside the button */
   background: black; /* Sets the button background color to black */
   color: white; /* Text color for the button */
   border-radius: 0.5rem; /* Rounds the corners of the button */
   transition: all 0.4s ease; /* Smooth transition for hover effects */
 }
 .btn:hover {
-  transform: scale(1.2) translateY(10px); /* Enlarges and slightly raises the button on hover */
+  transform: scale(1.2) translateY(0.625rem); /* Enlarges and slightly raises the button on hover */
 }
 
 .standard {
   display: grid; /* Uses CSS grid layout */
-  grid-template-columns: repeat(2, 2fr); /* Creates two columns, each with double fraction of space */
+  grid-template-columns: repeat(
+    2,
+    2fr
+  ); /* Creates two columns, each with double fraction of space */
   gap: 1.5rem; /* Gap between grid items */
   align-items: center; /* Centers items vertically within the grid */
-  background-color: var(--main-color); /* Background color from custom properties */
-  border-top: 4px solid #000000; /* Solid black border at the top */
+  background-color: var(
+    --main-color
+  ); /* Background color from custom properties */
+  border-top: 0.25rem solid #000000; /* Solid black border at the top */
 }
 .standard-1 {
   grid-template-columns: none; /* Removes grid column template for this variant */
@@ -129,11 +143,11 @@ section {
 }
 .standard-img img {
   max-width: 100%; /* Images can't exceed 100% of their container's width */
-  width: 480px; /* Sets a fixed width for images */
+  width: 30rem; /* Sets a fixed width for images */
   height: auto; /* Adjusts the height automatically to maintain aspect ratio */
 }
 .standard-img1 {
-  height: 250px; /* Sets a fixed height for this image variant */
+  height: 15.625rem; /* Sets a fixed height for this image variant */
 }
 .standard-text span {
   color: red; /* Text color set to red */
@@ -144,9 +158,10 @@ section {
   text-align: center; /* Centers the text horizontally */
 }
 
-
 .standard-text h2 {
-  font-size: var(--h2-font); /* Sets the font size for h2 elements within .standard-text to a predefined size */
+  font-size: var(
+    --h2-font
+  ); /* Sets the font size for h2 elements within .standard-text to a predefined size */
 }
 .standard-text p {
   margin: 0.8rem 0 1.8rem; /* Sets top and bottom margins for paragraph elements */
@@ -157,16 +172,23 @@ section {
   text-align: center; /* Centers the text within the .heading class */
 }
 .heading span {
-  color: var(--main-color); /* Sets the text color for spans to the main theme color */
+  color: var(
+    --main-color
+  ); /* Sets the text color for spans to the main theme color */
   font-weight: 600; /* Increases the font weight for emphasis */
 }
 .heading h2 {
-  font-size: var(--h2-font); /* Applies the predefined font size for h2 elements */
+  font-size: var(
+    --h2-font
+  ); /* Applies the predefined font size for h2 elements */
 }
 
 .menu-container {
   display: grid; /* Utilizes grid layout for the menu container */
-  grid-template-columns: repeat(auto-fit, minmax(220px, auto)); /* Creates a responsive grid with a minimum column width of 220px */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, auto)
+  ); /* Creates a responsive grid with a minimum column width of 220px */
   gap: 1.5rem; /* Sets the gap between grid items */
   align-items: center; /* Vertically centers the grid items */
 }
@@ -180,18 +202,18 @@ section {
   align-items: center; /* Centers items horizontally within the flex container */
   justify-content: center; /* Centers items vertically within the flex container */
   background: #fcf3b1; /* Sets a light background color */
-  padding: 20px; /* Adds padding around the content */
-  padding-top: 35px; /* Additional top padding */
+  padding: 1.25rem; /* Adds padding around the content */
+  padding-top: 2.1875rem; /* Additional top padding */
   border-radius: 0.5rem; /* Rounds the corners of the box */
   transition: all 0.4s ease; /* Adds a smooth transition effect for hover states */
 }
 
 .menu-container .box:hover {
-  transform: scale(1.05) translateY(10px); /* Slightly enlarges and raises the box on hover */
+  transform: scale(1.05) translateY(0.625rem); /* Slightly enlarges and raises the box on hover */
 }
 .box-img {
-  width: 250px; /* Sets a fixed width */
-  height: 325px; /* Sets a fixed height */
+  width: 15.625rem; /* Sets a fixed width */
+  height: 20.3125rem; /* Sets a fixed height */
 }
 .box-img img {
   width: 100%; /* Makes the image fully occupy the container's width */
@@ -200,42 +222,47 @@ section {
 .box h2 {
   font-size: 1.3rem; /* Sets the font size for h2 elements inside the box */
   color: #000000; /* Sets the text color to black */
-  padding-top: 5px; /* Adds padding above the h2 element */
+  padding-top: 0.3125rem; /* Adds padding above the h2 element */
 }
 .box h3 {
   font-size: 1rem; /* Sets the font size for h3 elements */
   font-weight: 400; /* Sets the font weight */
-  margin: 4px 0 10px; /* Sets top and bottom margins */
+  margin: 0.25rem 0 0.625rem; /* Sets top and bottom margins */
   color: rgb(180, 157, 4); /* Sets a specific color for the text */
 }
 
 .box .bx {
   position: absolute; /* Absolutely positions this element within its relative container */
-  background: var(--main-color); /* Sets background color using the main theme color */
+  background: var(
+    --main-color
+  ); /* Sets background color using the main theme color */
   right: 0; /* Aligns the element to the right */
   top: 0; /* Positions the element at the top */
-  font-size: 20px; /* Sets the font size */
-  padding: 7px 10px; /* Adds padding */
+  font-size: 1.25rem; /* Sets the font size */
+  padding: 0.4375rem 0.625rem; /* Adds padding */
   border-radius: 0 0.5rem 0 0.5rem; /* Sets border-radius for specific corners */
   cursor: pointer; /* Changes the cursor to indicate it's clickable */
 }
 
 .service-container {
   display: grid; /* Uses grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(240px, auto)); /* Creates a responsive grid with columns not less than 240px */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, auto)
+  ); /* Creates a responsive grid with columns not less than 240px */
   gap: 1.5rem; /* Sets the gap between grid items */
   margin-top: 4rem; /* Adds top margin */
 }
 
 .s-box {
   text-align: center; /* Centers the text inside .s-box */
-  padding: 20px 30px; /* Adds padding around the content */
+  padding: 1.25rem 1.875rem; /* Adds padding around the content */
 }
 .s-box img {
-  width: 90px; /* Sets a fixed width for images inside .s-box */
+  width: 5.625rem; /* Sets a fixed width for images inside .s-box */
 }
 .s-box h3 {
-  margin: 4px 0 10px; /* Sets top and bottom margins for h3 elements */
+  margin: 0.25rem 0 0.625rem; /* Sets top and bottom margins for h3 elements */
   color: var(--main-color); /* Sets text color using the main theme color */
   font-size: 1.2rem; /* Sets the font size for h3 elements */
 }
@@ -245,16 +272,16 @@ section {
 
 .cta {
   background: #ffc506; /* Sets a yellow background color */
-  padding: 70px 0; /* Adds vertical padding */
+  padding: 4.375rem 0; /* Adds vertical padding */
   text-align: center; /* Centers the text */
   width: 66%; /* Sets the width to 66% of the parent container */
-  margin: 100px auto; /* Centers the element horizontally with a top and bottom margin */
-  border-radius: 10px; /* Rounds the corners */
+  margin: 6.25rem auto; /* Centers the element horizontally with a top and bottom margin */
+  border-radius: 0.625rem; /* Rounds the corners */
 }
 .cta h2 {
   font-size: 2rem; /* Sets a larger font size for h2 elements */
   color: #000000; /* Sets the text color to black */
-  margin-bottom: 30px; /* Adds a bottom margin */
+  margin-bottom: 1.875rem; /* Adds a bottom margin */
 }
 
 .main {
@@ -262,30 +289,30 @@ section {
   flex-wrap: wrap; /* Allows items to wrap to the next line */
 }
 .footer {
-  padding: 10px 0; /* Adds vertical padding */
-  border-top: 2px solid #222; /* Adds a solid top border */
+  padding: 0.625rem 0; /* Adds vertical padding */
+  border-top: 0.125rem solid #222; /* Adds a solid top border */
 }
 .col {
   width: 25%; /* Sets the width of the column to 25% of its parent container */
-  padding-left: 20px; /* Adds padding to the left */
+  padding-left: 1.25rem; /* Adds padding to the left */
 }
 .col h4 {
   font-size: 1.2rem; /* Sets the font size for h4 elements */
   color: var(--text-color); /* Sets the text color using a custom property */
-  margin-bottom: 25px; /* Adds a bottom margin */
+  margin-bottom: 1.5625rem; /* Adds a bottom margin */
   position: relative; /* Sets position context for pseudo-elements */
 }
 .col h4::before {
   content: ""; /* Necessary for the pseudo-element to display */
   position: absolute; /* Absolutely positions the pseudo-element */
-  height: 2px; /* Sets the height of the pseudo-element */
-  width: 50px; /* Sets the width of the pseudo-element */
+  height: 0.125rem; /* Sets the height of the pseudo-element */
+  width: 3.125rem; /* Sets the width of the pseudo-element */
   left: 0; /* Aligns the pseudo-element to the left */
-  bottom: -8px; /* Positions the pseudo-element below the h4 element */
+  bottom: -0.5rem; /* Positions the pseudo-element below the h4 element */
   background: var(--main-color); /* Sets the background color */
 }
 .col ul li:not(last-child) {
-  margin-bottom: 15px; /* Adds a bottom margin to all list items except the last one */
+  margin-bottom: 0.9375rem; /* Adds a bottom margin to all list items except the last one */
 }
 .col ul li a {
   color: #9897a9; /* Sets the text color for links */
@@ -296,17 +323,17 @@ section {
 }
 .col ul li a:hover {
   color: var(--text-color); /* Changes text color on hover */
-  transform: translateX(-10px); /* Moves the link to the left on hover */
+  transform: translateX(−0.625rem); /* Moves the link to the left on hover */
 }
 .col .social-icons {
-  width: 220px; /* Sets a fixed width */
+  width: 13.75rem; /* Sets a fixed width */
   display: flex; /* Uses flexbox for layout */
   align-items: center; /* Centers items vertically */
   justify-content: space-between; /* Distributes space between items */
 }
 .col .social-icons a {
-  height: 40px; /* Sets a fixed height */
-  width: 40px; /* Sets a fixed width */
+  height: 2.5rem; /* Sets a fixed height */
+  width: 2.5rem; /* Sets a fixed width */
   background: var(--main-color); /* Sets background color */
   color: var(--text-color); /* Sets text color */
   display: inline-flex; /* Uses inline-flex for layout */
@@ -327,7 +354,7 @@ section {
 /* Styles for screens up to 1560px wide (Large Devices, Small Laptops) */
 @media (max-width: 1560px) {
   header {
-    padding: 14px 40px; /* Adjusts header padding for smaller screens */
+    padding: 0.875rem 2.5rem; /* Adjusts header padding for smaller screens */
     transition: 0.2s; /* Smooth transition for resizing */
   }
   :root {
@@ -342,7 +369,7 @@ section {
 /* Styles for screens up to 1140px wide (Tablets, Large Phones) */
 @media (max-width: 1140px) {
   section {
-    padding: 50px 8%; /* Adjusts padding for sections to fit tablet screens */
+    padding: 3.125rem 8%; /* Adjusts padding for sections to fit tablet screens */
   }
 
   #menu-icon {
@@ -352,18 +379,18 @@ section {
 
   .navbar {
     position: absolute; /* Changes navbar position to absolute */
-    top: -400px; /* Initially positions navbar off-screen */
+    top: -25rem; /* Initially positions navbar off-screen */
     left: 0;
     right: 0;
     display: flex;
     flex-direction: column; /* Stacks navbar items vertically */
     text-align: center; /* Centers navbar items */
-    border-top: 1px solid black; /* Adds a top border for distinction */
+    border-top: 0.0625rem solid black; /* Adds a top border for distinction */
     background: var(--bg-color); /* Sets background color for navbar */
     transition: all 0.4s ease; /* Smooth transition for expanding/collapsing navbar */
   }
   .navbar.active {
-    top: 70px; /* Changes top position of navbar when active */
+    top: 4.375rem; /* Changes top position of navbar when active */
   }
   .navbar a {
     padding: 1.5rem; /* Increases padding for navbar links for easier touch navigation */
@@ -371,7 +398,7 @@ section {
   }
   .col {
     width: 50%; /* Adjusts column width for tablet screens */
-    margin-bottom: 10px; /* Adds a bottom margin */
+    margin-bottom: 0.625rem; /* Adds a bottom margin */
   }
 }
 
@@ -386,7 +413,7 @@ section {
 /* Styles for screens up to 720px wide (Small to Medium Phones) */
 @media (max-width: 720px) {
   header {
-    padding: 10px 16px; /* Reduces header padding for small screens */
+    padding: 0.625rem 1rem; /* Reduces header padding for small screens */
   }
   .home {
     grid-template-columns: 1fr; /* Changes grid to a single column layout */
@@ -399,7 +426,7 @@ section {
 
   .home-text h1,
   h2 {
-    padding-right: 0px; /* Removes right padding for h1 and h2 */
+    padding-right: 0rem; /* Removes right padding for h1 and h2 */
   }
   .standard {
     grid-template-columns: 1fr; /* Adjusts to a single column layout for the standard section */
@@ -409,7 +436,7 @@ section {
     order: 2; /* Changes the order of images in the flex container */
   }
   section {
-    padding: 100px 7%; /* Adjusts section padding for smaller screens */
+    padding: 6.25rem 7%; /* Adjusts section padding for smaller screens */
   }
 }
 
